@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my-second-webpage.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="Logo place" src="./images/Imgur.png" />
+    </div>
+    <img id="banner" src="./images/banner.jpg" alt="banner_image" height="360px">
+    <!-- inline style -->
+    <!-- <h1 style="text-align: center; color: blue;"> -->
+    <h1>
+        About HTML
+    </h1>
+
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            <p>This is example for ordered list
+            <ol>
+                <li>
+                    <a href="https://www.timesnownews.com/">
+                        Times Now
+                    </a>
+                </li>
+                <li>
+                    <a href="https://yahoo.com" target="_blank">
+                        Yahoo
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div id="team"><img id="team-image" src="./images/teamwork.jpg" alt="teamwork"></div>
+
+    </div>
+
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Chennai</td>
+                <td>India</td>
+                <td>150000</td>
+                <td>Apr 10, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Backend Developer</td>
+                <td>Chennai</td>
+                <td>India</td>
+                <td>120000</td>
+                <td>Apr 10, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>Madurai</td>
+                <td>India</td>
+                <td>1000000</td>
+                <td>Apr 9, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Mobile App Developer</td>
+                <td colspan="2">Comibatore</td>
+                
+                <td>150000</td>
+                <td>Apr 5, 2024</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form id="application-form">
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+<div class="form-group">
+    <label for="email">Email Address</label><br>
+    <input type="email" id="email" name="emailaddress" required>
+</div>
+
+<div class="form-group">
+    <label for="phone">Phone</label><br>
+    <input type="tel" id="phone" name="phone" required placeholder="9999999999">
+</div>
+
+<div class="form-group">
+    <label for="dob">Date of birth</label><br>
+    <input type="date" id="dob" name="dob" required>
+</div>
+
+<div class="form-group">
+    <label for="position">Position Applied For</label><br>
+    <select name="Position Applied" id="position" required>
+        <option value="">Select Position</option>
+        <option value="frontend developer">Frontend Developer</option>
+        <option value="backend developer">Backend Developer</option>
+        <option value="data scientist">Data Scientist</option>
+        <option value="mobileapp developer">Mobile App Developer</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="resume">Upload your resume</label><br>
+    <input type="file" id="resume" name="resume" required>
+</div>
+
+<div class="form-group">
+    <label for="coverletter">Cover Letter</label><br>
+    <textarea id="coverletter" name="coverletter" rows="5" placeholder="Explain that makes you suitable for the job"></textarea>
+</div>
+
+
+<div class="form-group">
+    <label for="terms">
+    <input type="checkbox" id="terms" name="terms" required> I agree to the terms and conditions
+</label>
+</div>
+
+<div class="form-group">
+    <input type="submit" value="Submit Application">
+</div>
+
+        </form>
+    </div>
+
+
+
+
+    <div id="footer">
+        <ul id="footer-links">
+            <li>Courses</li>
+            <li>Contact Us</li>
+            <li>Terms</li>
+        </ul>
+        <span class="copyrights">© 2024 India</span>
+    </div>
+</body>
+
+</html>
