@@ -271,9 +271,18 @@ h2 {
 
 .what-i-do-blueimg{
     position: absolute;
-    margin-top: -150px;
+    margin-top: -100px;
+    margin-right: -60px;
     z-index: -10;
 }
+
+.what-i-do-redimg{
+    position: absolute;
+    margin-top: -210px;
+    margin-left: -100px;
+    z-index: -10;
+}
+
 
 
 #what-i-do-section {
@@ -300,11 +309,13 @@ h2 {
 #what-i-do-boxes {
     display: flex;
     margin-top: 32px;
+    
 }
 
 .what-i-do-box {
     width: 33.33%;
-    position: relative;
+    
+
 }
 
 
